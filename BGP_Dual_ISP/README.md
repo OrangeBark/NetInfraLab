@@ -5,6 +5,16 @@ Following is a BGP / DUAL ISP LAB on GNS3
 
 We are using FRROUTING on GNS3 afters configuring HQ and REMOTE-HQ routers
 
+The design uses:
+
+- Two direct eBGP sessions between HQ and Remote HQ
+- Equal-Cost Multipath routing (ECMP)
+- BFD-assisted failure detection
+- BGP keepalive and hold timers
+- Inbound and outbound prefix filtering
+- End-to-end PC connectivity
+- Automatic failover when either WAN circuit fails
+
 The main success criteria are:  
 
 * Both BGP sessions established  
